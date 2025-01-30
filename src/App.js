@@ -28,10 +28,14 @@ function App() {
           ></Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/project" element={<Login />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
         </Routes>
-        <br /> <br />
-        <br /> <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
         <Footer></Footer>
       </BrowserRouter>
     </div>

@@ -1,10 +1,10 @@
-.popular-items{
+  .popular-items{
     display: flex;
-     justify-content:space-evenly;
-     /* gap:5px; */
+    justify-content: space-around;
       width: 100vw;
-      overflow-x: auto;
+      /* overflow-x: auto; */
 }
+
 .head-women{
   color: rgb(190, 12, 57);
   font-weight: bolder;

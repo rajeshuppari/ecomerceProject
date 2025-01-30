@@ -13,7 +13,7 @@ const Navbar = () => {
 
   function dropdownClick(e) {
     nav_menu.current.classList.toggle("nav-menu-visible");
-    e.target.classList.toggle("open");
+    // e.target.classList.toggle("open");
   }
   return (
     <div>
@@ -41,6 +41,7 @@ const Navbar = () => {
           <Link to="/signup" className="link">
             SignUp
           </Link>
+          
         </div>
         <div className="login">
           <Link to="/cart">
@@ -48,7 +49,7 @@ const Navbar = () => {
             <img src={cart_icon} alt="" className="cart-icon" />
           </Link>
           <sup>{cart.length}</sup>
-    
+
           {/* <FaShoppingCart /> */}
         </div>
       </div>

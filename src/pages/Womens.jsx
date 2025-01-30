@@ -6,13 +6,6 @@ import Items from "../popularwomen/Items";
 const Womens = (props) => {
   return (
     <div className="mens">
-      {/* <div className='banner'> 
-         <img src={props.image} alt=""   />
-         </div> */}
-      {/* {
-    props.boolean?<h2 className='item-exist'>this item is already exist</h2>:<div></div>
-      } */}
-
       <div className="productlist">
         {women_collection.map((item, i) => {
           return (

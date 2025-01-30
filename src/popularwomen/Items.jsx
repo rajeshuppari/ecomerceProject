@@ -11,7 +11,7 @@ const Items = (product) => {
         <p className='desc'>{product.name}</p>
 
         <div className='prices'>
-            <b>{product.newprice} $</b>&nbsp;&nbsp;&nbsp;
+            <b>{product.newprice}$</b>&nbsp;
             <em>{product.oldprice}$</em><br />
             <button onClick={()=>{dispatch({type:"Add",product:product})}} className='btn'>Add</button>
         </div>

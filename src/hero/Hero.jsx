@@ -9,10 +9,10 @@ const Hero = () => {
       <div className="new-text">
         <b>NEW ARRIVALS ONLY</b>
       </div>
+      
 
-      <div className="heroimg-div">
         <img src={hero_image} alt="" className="hero-img" />
-      </div>
+    
     </div>
   );
 };
