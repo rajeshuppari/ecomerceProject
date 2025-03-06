@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./navbar/Navbar";
 import Shop from "./pages/Shop";
@@ -14,30 +14,23 @@ import Footer from "./footer/Footer";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Shop />}></Route>
-          <Route
-            path="/mens"
-            element={<Mens image={men_banner}></Mens>}
-          ></Route>
-          <Route
-            path="/womens"
-            element={<Womens image={women_banner}></Womens>}
-          ></Route>
-          <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/project" element={<Login />}></Route>
-          <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/" element={<Shop />} />
+          <Route path="/mens" element={<Mens image={men_banner} />} />
+          <Route path="/womens" element={<Womens image={women_banner} />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/project" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <br />
         <br />
         <br />
         <br />
-
-        <Footer></Footer>
-      </BrowserRouter>
+        <Footer />
+      </Router>
     </div>
   );
 }
